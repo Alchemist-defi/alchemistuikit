@@ -68,10 +68,12 @@ const Menu: React.FC<NavProps> = ({
   setLang,
   currentLang,
   cakePriceUsd,
+  secondPriceUsd,
   links,
   priceLink,
   profile,
   children,
+  secondPriceLink
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -136,9 +138,11 @@ const Menu: React.FC<NavProps> = ({
           setLang={setLang}
           currentLang={currentLang}
           cakePriceUsd={cakePriceUsd}
+          secondPriceUsd={secondPriceUsd}
           pushNav={setIsPushed}
           links={links}
           priceLink={priceLink}
+          secondPriceLink={secondPriceLink}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}

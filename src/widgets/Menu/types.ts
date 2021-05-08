@@ -42,11 +42,13 @@ export interface PanelProps {
   isDark: boolean;
   toggleTheme: (isDark: boolean) => void;
   cakePriceUsd?: number;
+  secondPriceUsd? : number;
   currentLang: string;
   langs: LangType[];
   setLang: (lang: LangType) => void;
   links: Array<MenuEntry>;
   priceLink: string;
+  secondPriceLink? : string;
 }
 
 export interface NavProps extends PanelProps {

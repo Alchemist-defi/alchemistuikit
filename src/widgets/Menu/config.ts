@@ -133,6 +133,11 @@ export const socials = [
     icon: "TwitterIcon",
     href: "https://twitter.com/AlchemistDefi",
   },
+  {
+    label: "Medium",
+    icon: "MediumIcon",
+    href: "https://alchemistdefi.medium.com/",
+  }
 ];
 
 export const MENU_HEIGHT = 64;

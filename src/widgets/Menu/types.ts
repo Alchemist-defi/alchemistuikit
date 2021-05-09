@@ -49,8 +49,8 @@ export interface PanelProps {
   setLang: (lang: LangType) => void;
   links: Array<MenuEntry>;
   priceLink: string;
-  mistPriceLink? : string;
-  aurumPriceLink? : string;
+  mistPriceLink : string;
+  aurumPriceLink : string;
 }
 
 export interface NavProps extends PanelProps {

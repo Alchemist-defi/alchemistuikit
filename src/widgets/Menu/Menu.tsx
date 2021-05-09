@@ -68,8 +68,10 @@ const Menu: React.FC<NavProps> = ({
   setLang,
   currentLang,
   cakePriceUsd,
+  mistPriceUsd,
   links,
   priceLink,
+  mistPriceLink,
   profile,
   children,
 }) => {
@@ -145,8 +147,4 @@ const Menu: React.FC<NavProps> = ({
         </Inner>
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
       </BodyWrapper>
-    </Wrapper>
-  );
-};
-
-export default Menu;
+    </Wrapper>

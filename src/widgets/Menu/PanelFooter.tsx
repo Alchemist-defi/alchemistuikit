@@ -78,6 +78,9 @@ const PanelFooter: React.FC<Props> = ({
       </Container>
     );
   }
+  console.log("Cake value received in menu = ",cakePriceUsd)
+  console.log("Aurum value received in menu = ", aurumPriceUsd)
+  console.log("Mist value received in menu = ", mistPriceUsd)
   return (
     <Container>
       <SocialEntry>

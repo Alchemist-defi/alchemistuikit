@@ -2374,6 +2374,9 @@ var PanelFooter = function (_a) {
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
                 React.createElement(Icon$_, null))));
     }
+    console.log("Cake value received in menu = ", cakePriceUsd);
+    console.log("Aurum value received in menu = ", aurumPriceUsd);
+    console.log("Mist value received in menu = ", mistPriceUsd);
     return (React.createElement(Container, null,
         React.createElement(SocialEntry, null,
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },

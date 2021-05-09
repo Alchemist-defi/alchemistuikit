@@ -78,7 +78,7 @@ const PanelFooter: React.FC<Props> = ({
       </Container>
     );
   }
-  console.log("Cake value received in menu = ",cakePriceUsd)
+  console.log("Cake value received in menu = ", cakePriceUsd)
   console.log("Aurum value received in menu = ", aurumPriceUsd)
   console.log("Mist value received in menu = ", mistPriceUsd)
   return (
@@ -93,7 +93,7 @@ const PanelFooter: React.FC<Props> = ({
           <Skeleton width={80} height={24} />
         )}        
         {mistPriceUsd ? (
-          <PriceLink href={priceLink} target="_blank">
+          <PriceLink href={mistPriceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${mistPriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
@@ -101,7 +101,7 @@ const PanelFooter: React.FC<Props> = ({
           <Skeleton width={80} height={24} />
         )}        
         {aurumPriceUsd ? (
-          <PriceLink href={priceLink} target="_blank">
+          <PriceLink href={aurumPriceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${aurumPriceUsd.toFixed(3)}`}</Text>
           </PriceLink>

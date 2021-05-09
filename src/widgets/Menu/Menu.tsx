@@ -140,9 +140,13 @@ const Menu: React.FC<NavProps> = ({
           setLang={setLang}
           currentLang={currentLang}
           cakePriceUsd={cakePriceUsd}
+          mistPriceUsd={mistPriceUsd}
+          aurumPriceUsd={aurumPriceUsd}
           pushNav={setIsPushed}
           links={links}
           priceLink={priceLink}
+          mistPriceLink={mistPriceLink}
+          aurumPriceLink={aurumPriceLink}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}

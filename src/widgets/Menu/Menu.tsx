@@ -147,4 +147,8 @@ const Menu: React.FC<NavProps> = ({
         </Inner>
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
       </BodyWrapper>
-    </Wrapper>
+    </Wrapper>
+  );
+};
+
+export default Menu;

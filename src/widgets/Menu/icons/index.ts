@@ -30,3 +30,4 @@ export { default as GenieIcon } from "./Genie";
 export { default as ContractIcon } from "./Contract";
 export { default as DocIcon } from "./Doc";
 export { default as FireIcon } from "./Fire";
+export { default as MediumIcon } from "./Medium";

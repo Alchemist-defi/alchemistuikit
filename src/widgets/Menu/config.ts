@@ -137,7 +137,12 @@ export const socials = [
     label: "Medium",
     icon: "MediumIcon",
     href: "https://alchemistdefi.medium.com/",
-  },
+  },  
+  {
+    label: "Discord",
+    icon: "DiscordIcon",
+    href: "http://bit.ly/alchemistdefi-discord",
+  }
 ];
 
 export const MENU_HEIGHT = 64;

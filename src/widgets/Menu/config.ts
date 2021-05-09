@@ -132,6 +132,11 @@ export const socials = [
     label: "Twitter",
     icon: "TwitterIcon",
     href: "https://twitter.com/AlchemistDefi",
+  },  
+  {
+    label: "Medium",
+    icon: "TwitterIcon",
+    href: "https://medium.com/AlchemistDefi",
   },
 ];
 

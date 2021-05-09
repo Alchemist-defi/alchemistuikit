@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
+import { AurumRoundIcon, MistRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -78,23 +78,12 @@ const PanelFooter: React.FC<Props> = ({
       </Container>
     );
   }
-  console.log("Cake value received in menu = ", cakePriceUsd)
-  console.log("Aurum value received in menu = ", aurumPriceUsd)
-  console.log("Mist value received in menu = ", mistPriceUsd)
   return (
     <Container>
       <SocialEntry>
-      {cakePriceUsd ? (
-          <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
-          </PriceLink>
-        ) : (
-          <Skeleton width={80} height={24} />
-        )}        
         {mistPriceUsd ? (
           <PriceLink href={mistPriceLink} target="_blank">
-            <PancakeRoundIcon width="24px" mr="8px" />
+            <MistRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${mistPriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
@@ -102,7 +91,7 @@ const PanelFooter: React.FC<Props> = ({
         )}        
         {aurumPriceUsd ? (
           <PriceLink href={aurumPriceLink} target="_blank">
-            <PancakeRoundIcon width="24px" mr="8px" />
+            <AurumRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${aurumPriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (

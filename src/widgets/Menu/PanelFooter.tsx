@@ -61,11 +61,13 @@ const PanelFooter: React.FC<Props> = ({
   isDark,
   cakePriceUsd,
   mistPriceUsd,
+  aurumPriceUsd,
   currentLang,
   langs,
   setLang,
   priceLink,
   mistPriceLink,
+  aurumPriceLink,
 }) => {
   if (!isPushed) {
     return (
@@ -79,10 +81,26 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <SocialEntry>
-        {cakePriceUsd ? (
+      {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}        
+        {mistPriceUsd ? (
+          <PriceLink href={priceLink} target="_blank">
+            <PancakeRoundIcon width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${mistPriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}        
+        {aurumPriceUsd ? (
+          <PriceLink href={priceLink} target="_blank">
+            <PancakeRoundIcon width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${aurumPriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />

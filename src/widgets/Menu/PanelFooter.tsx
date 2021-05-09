@@ -60,14 +60,10 @@ const PanelFooter: React.FC<Props> = ({
   toggleTheme,
   isDark,
   cakePriceUsd,
-  mistPriceUsd,
-  aurumPriceUsd,
   currentLang,
   langs,
   setLang,
-  priceLink,
-  mistPriceLink,
-  aurumPriceLink
+  priceLink
 }) => {
   if (!isPushed) {
     return (

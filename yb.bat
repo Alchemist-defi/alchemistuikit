@@ -1,4 +1,4 @@
-yarn build
-git add .
-git commit -m "Updated UI Kit"
-git push
+call yarn build
+call git add .
+call git commit -m "Updated UI Kit"
+call git push

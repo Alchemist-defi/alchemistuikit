@@ -2244,6 +2244,11 @@ var socials = [
         icon: "TwitterIcon",
         href: "https://twitter.com/AlchemistDefi",
     },
+    {
+        label: "Medium",
+        icon: "TwitterIcon",
+        href: "https://medium.com/AlchemistDefi",
+    },
 ];
 var MENU_HEIGHT = 64;
 var MENU_ENTRY_HEIGHT = 48;
